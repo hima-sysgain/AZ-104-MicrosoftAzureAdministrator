@@ -1,34 +1,54 @@
----
-lab:
-    title: '07 - Manage Azure storage'
-    module: 'Module 07 - Azure Storage'
----
 
-# Lab 07 - Manage Azure Storage
-# Student lab manual
+# Manage Azure Storage
 
-## Lab scenario
+
+## Table of Contents
+
+[Overview](#Overview)
+
+[Pre-Requisites](#Pre-requisites) 
+
+[Provision the lab environment](#Provision-the-lab-environment)
+
+[Create and configure Azure Storage accounts](#Create-and-configure-Azure-Storage-accounts)
+
+[Manage authentication and authorization for Azure Storage](#Manage-authentication-and-authorization-for-Azure-Storage)
+
+
+
+
+## Overview
 
 You need to evaluate the use of Azure storage for storing files residing currently in on-premises data stores. While majority of these files are not accessed frequently, there are some exceptions. You would like to minimize cost of storage by placing less frequently accessed files in lower-priced storage tiers. You also plan to explore different protection mechanisms that Azure Storage offers, including network access, authentication, authorization, and replication. Finally, you want to determine to what extent Azure Files service might be suitable for hosting your on-premises file shares.
 
-## Objectives
+**Learning Objectives**
 
 In this lab, you will:
 
-+ Task 1: Provision the lab environment
-+ Task 2: Create and configure Azure Storage accounts 
-+ Task 3: Manage blob storage
-+ Task 4: Manage authentication and authorization for Azure Storage
-+ Task 5: Create and configure an Azure Files shares
-+ Task 6: Manage network access for Azure Storage
+ 1: Provision the lab environment
+ 2: Create and configure Azure Storage accounts 
+ 3: Manage blob storage
+ 4: Manage authentication and authorization for Azure Storage
+ 5: Create and configure an Azure Files shares
+ 6: Manage network access for Azure Storage
 
-## Estimated timing: 40 minutes
+**Some Key points:**
 
-## Instructions
+1. We recommend using Chrome or Edge as the broswer. Also set your browser zoom to 80%
 
-### Exercise 1
+2. All screen shots are examples ONLY. Screen shots can be enlarged by Clicking on them
 
-#### Task 1: Provision the lab environment
+3. Login credentials are provided later in the guide (scroll down). Every User MUST keep these credentials handy.
+
+4. Do NOT use any data from screen shots.Only use data provided in the content section of the lab
+
+5. Mac OS Users should use ctrl+C / ctrl+V to copy and paste inside the AWS Console
+
+## Pre-Requisites
+
+* Azure fundamentals
+
+#### Provision the lab environment
 
 In this task, you will deploy an Azure virtual machine that you will use later in this lab. 
 
@@ -65,7 +85,7 @@ In this task, you will deploy an Azure virtual machine that you will use later i
 
 1. Close the Cloud Shell pane.
 
-#### Task 2: Create and configure Azure Storage accounts 
+#### Create and configure Azure Storage accounts 
 
 In this task, you will create and configure an Azure Storage account. 
 
@@ -162,7 +182,7 @@ In this task, you will create a blob container and upload a blob into it.
 
     > **Note**: You have the option to download the blob, change its access tier (it is currently set to **Hot**), acquire a lease, which would change its lease status to **Locked** (it is currently set to **Unlocked**) and protect the blob from being modified or deleted, as well as assign custom metadata (by specifying an arbitrary key and value pairs). You also have the ability to **Edit** the file directly within the Azure portal interface, without downloading it first. You can also create snapshots, as well as generate a SAS token (you will explore this option in the next task). 
 
-#### Task 4: Manage authentication and authorization for Azure Storage
+#### Manage authentication and authorization for Azure Storage
 
 In this task, you will configure authentication and authorization for Azure Storage.
 
